@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import "./Login.css";
 
 function Login() {
+  const [usernameReg, setUsernameReg] = useState("");
+
   return (
     <div className="Login">
       <h1>Login</h1>
