@@ -1,15 +1,16 @@
 import "./App.css";
-import {Route, BrowserRouter} from "react-router-dom";
+import {Route, BrowserRouter, Switch} from "react-router-dom";
 
 //Pages
 import Home from "./Components/Pages/Home/Home";
+import GetQuote from "./Components/Pages/GetQuote/GetQuote";
 
+//add exact before path
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Route path="/" component={Home} />
-      </BrowserRouter>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/testing" component={GetQuote} />
     </div>
   );
 }
